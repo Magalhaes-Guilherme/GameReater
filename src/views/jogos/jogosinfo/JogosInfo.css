@@ -1,0 +1,161 @@
+.jogos-info {
+  margin: 20px;
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.jogos-info h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  z-index: -1;
+  
+  background-size: cover;
+  
+ 
+  opacity: 0.4; /* Define a opacidade da imagem */
+  filter: brightness(0.7) blur(2px); /* Aplica brilho reduzido e desfoque */
+  
+}
+
+
+.screenshots-container {
+  position: relative;
+  margin-top: 20px;
+  width: 100%;
+  height: 10vh;
+  padding-bottom: 30%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.screenshot-slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.screenshot-slide.active {
+  display: block;
+}
+
+.screenshot-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev-slide-button,
+.next-slide-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.prev-slide-button, .next-slide-button svg{
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.prev-slide-button svg:hover , .next-slide-button svg:hover{
+  color: orange;
+  background-color: #f5f5f533;
+}
+
+.prev-slide-button {
+  left: 10px;
+}
+
+.next-slide-button {
+  right: 10px;
+}
+
+
+.rating-chart {
+  margin-top: 20px;
+}
+
+.rating-bars-container {
+  background-color: rgba(255, 255, 255, 0.413);
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 20px;
+}
+
+.rating-bars-container span {
+  padding-right: 10px;
+  width: 10%;
+  background-color: rgb(20, 20, 20)
+}
+
+.bar {
+  background-color: orange;
+  height: 20px;
+  position: relative;
+}
+
+.bar span {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.about p{
+  color:rgb(206, 206, 206);
+}
+.game-details {
+  margin-top: 20px;
+}
+
+.game-details h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.game-details p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: rgb(206, 206, 206);
+}
+
+.game-details span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.game-details .details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.game-details .details-grid p {
+  margin: 0;
+}
