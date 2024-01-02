@@ -1,0 +1,54 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    height: 30px;
+    background-color: #000000de;
+}
+
+.menu .btnPrincipal a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: #F47617;
+    font-size:25px;
+}
+.menu .btnPrincipal a:hover {
+    color: #d16512;
+}
+
+.menu button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: .3rem;
+    font-size: 1.3rem;
+    height: 50px;
+    border-radius: 12px;
+    background-color: #F47617;
+    border: 2px solid #F47617;
+    color: #ffffff;
+}
+.menu button:hover {
+    background-color: #d16512;
+    border: 2px solid #d16512;
+    color: #ffffff;
+}
+
+.menu .btnConsoles{
+    position: absolute;
+    left: 30%;
+}
+
+.menu .btnJogos{
+    position: absolute;
+    left: 50%;
+}
+
+.loggedInUser {
+    color: white;
+    position: absolute;
+    right: 140px;
+}
